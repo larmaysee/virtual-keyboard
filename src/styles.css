@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+#virtual-keyboard {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.keyboard-row {
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard-key {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.keyboard-key:hover {
+  background-color: #f1f1f1;
+}
+
+.highlight {
+  background-color: #6fa4ff;
+  color: white;
+}
+
+/* ... Existing styles ... */
+
+.keyboard-key.shift {
+  background-color: #ccc;
+  color: #333;
+}
+
+.highlight {
+  background-color: #6fa4ff;
+  color: white;
+}
+
+.shift-highlight {
+  background-color: #2f73ff;
+  color: white;
+}
